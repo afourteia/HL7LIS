@@ -1,0 +1,5 @@
+MSH|^~\&|SendingApp|SendingFac|ReceivingApp|ReceivingFac|20220124014108||ORU^R01|MSGID123456|P|2.3.1|||||
+PID|1||12345^^^MRN^MR||Doe^John^^^Mr.||19700101|M|||123 Main St^^Anytown^CA^12345^USA|||||||||||||||||||||||||||
+ORC|RE||ORD1234567||CM||||20220124014108|||123^Smith^John^^^^^^^Dr.
+OBX|1|NM|GLU^Glucose Lvl||100|mg/dL|70-100|N|||F|||20220124014108|Lab1|
+OBX|2|ST|COMMENT^Comment||Patient is diabetic.|||N|||F|||20220124014108|Lab1|
