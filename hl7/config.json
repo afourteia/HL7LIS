@@ -1,0 +1,24 @@
+{
+    "LocalHost": "0.0.0.0",
+    "LocalPort": "3000",
+    "RemoteHost": "0.0.0.0",
+    "RemotePort": "60000",
+    "Header": "0b",
+    "Trailer": "1c0d",
+    "SegmentTerminator": "0d",
+    "TcpTimeoutSeconds": 30,
+    "Message":  {
+        "MessageCode": "ADT",
+        "TriggerEvent": "A31",
+        "SendingApplication": "SenderApp",
+        "SendingFacility": "1280",
+        "ReceivingApplication": "ReceiverApp",
+        "ReceivingFacility": "1280",
+        "ProcessingID": "D",
+        "PatientUR": "TestPatientUR1234",
+        "PatientName": "TestSurname^TestFirstName"
+    },
+    "MessageTypes":{
+        "ORU":"ORU/ACK"
+    }
+}
