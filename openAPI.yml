@@ -1,0 +1,83 @@
+openapi: '3.0.2'
+info:
+  title: API Title
+  version: '1.0'
+  license:
+    name: TBA
+    url: TBA
+
+servers:
+  - url: https://api.LIS.LIS/v1
+
+paths:
+  /healthcheck:
+    get:
+      summary: check the availability of the server
+      description: This operation checks the health of the server and returns its status.
+      operationId: healthcheck-get
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+  /requisitions:
+    get:
+      summary: get patient info and Lab test requests
+      description: This operation returns patient info and Lab test requests.
+      operationId: requisitions-get
+      parameters:
+        - name: id
+          in: query
+          description: requisition id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: requisition id
+                  patient:
+                    type: object
+                  requisition:
+                    type: object
+        '400':
+          description: Bad Request
+    post:
+      summary: provide results of requisition
+      description: This operations provides the results of a requisition.
+      operationId: requisitions-post
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                name:
+                  type: string
+                email:
+                  type: string
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+
+components:
+  securitySchemes:
+    ApiKeyAuth: # Arbitrary name for the security scheme
+      type: apiKey
+      in: header
+      name: X-API-Key
+
+security:
+  - ApiKeyAuth: []
