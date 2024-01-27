@@ -1,0 +1,15 @@
+{
+    "MSH": {
+        "FIELD_SEPARATOR": "|",
+        "ENCODING_CHARACTERS": "^~\\&",
+        "SENDING_APPLICATION": "Manufacturer",
+        "SENDING_FACILITY": "analyzer",
+        "DATE_TIME_OF_MESSAGE": "20070423101830",
+        "MESSAGE_TYPE": "ORU^R01",
+        "MESSAGE_CONTROL_ID": "1",
+        "PROCESSING_ID": "P",
+        "VERSION_ID": "2.3.1",
+        "APPLICATION_ACKNOWLEDGMENT_TYPE": "0",
+        "CHARACTER_SET": "ASCII"
+    }
+}
